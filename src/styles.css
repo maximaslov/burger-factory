@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #2A2A2A;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.order-button {
+    padding: 9px 32px 6px 33px;
+    background-color: #00B3FA;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    line-height: 27px;
+}
+
+.order-button:hover {
+    background-color: #008BF6;
+}
+
+.main-container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 284px;
+    background-color: #FFFFFF;
+    height: 125px;
+}
+
+.header__left-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 862px;
+    width: 100%;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 20px;
+}
+
+.header__menu {
+    max-width: 552px;
+    width: 100%;
+}
+
+.header__menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.header__button {
+    margin-left: 20px;
+}
+
+.banner {
+    position: relative;
+    background: url("./img//section-bg.png"); 
+    background-repeat: no-repeat;
+    padding: 49px 284px 0 284px;
+    height: 695px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__text {
+    max-width: 661px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__title {
+    font-size: 84px;
+    line-height: 125px;
+    font-weight: 900;
+    margin: 93px 0 12px 0;
+}
+
+.banner__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 18px;
+    letter-spacing: 0.1px;
+}
+
+.banner__button {
+    background-color: #F6E224;
+    border-radius: 10px;
+    padding: 8px 26px 7px 27px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    letter-spacing: 0.12px;
+}
+
+.banner__button:hover {
+    background-color: orange;
+}
+
+@media (max-width: 1620px) {
+    .header {
+        padding: 29px 150px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .banner {
+        padding: 29px 100px;
+    }
+
+    .banner__title {
+        margin-top: 0;
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .banner__image img {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .header {
+        padding: 29px 50px;
+    }
+
+    .header__menu-items {
+       gap: 15px;
+       flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1180px) {
+    .header {
+        margin-bottom: 10px;
+    }
+
+    .header__menu {
+        max-width: 400px;
+    }
+
+    .header__left-section {
+        max-width: 640px;
+    }
+
+    .banner {
+        padding: 20px;
+        align-items: center;
+       
+    }
+
+    .banner__text {
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .banner__title {
+        line-height: 50px;
+        text-shadow: 1px 1px 5px white;
+    }
+
+    .banner__subtitle {
+        text-shadow: 1px 1px 5px white;
+    }
+
+    .banner__image{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 1;
+        filter: blur(5px);
+    }
+
+    .banner__image img {
+        max-width: 625px;
+    }
+
+    .order-button {
+        width: 170px;
+        padding: 7px 0 6px 0;
+    }
+    
+}
+
+
+@media (max-width: 880px) {
+    .header  {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px 10px;
+        height: auto;
+    }
+    .header__left-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__logo,  .button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 625px) {
+    .banner__image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner__image img {
+        max-width: 200%;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__menu-item {
+        font-size: 13px;
+    }
+}
