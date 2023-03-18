@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #2a2a2a;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.order-button {
+  padding: 9px 32px 6px 33px;
+  background-color: #00b3fa;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 27px;
+}
+
+.order-button:hover {
+  background-color: #008bf6;
+}
+
+.main-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  color: #2a2a2a;
+  font-size: 64px;
+  line-height: 95px;
+}
+
+.subtitle {
+  color: #2a2a2a;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.description {
+  color: #2a2a2a;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 284px;
+  background-color: #ffffff;
+  height: 125px;
+
+  @media (max-width: 1620px) {
+    padding: 29px 150px;
+  }
+
+  @media (max-width: 1370px) {
+    padding: 29px 50px;
+  }
+
+  @media (max-width: 1180px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 10px;
+    height: auto;
+  }
+
+  &__left-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 862px;
+    width: 100%;
+    align-items: center;
+
+    @media (max-width: 1180px) {
+      max-width: 640px;
+    }
+
+    @media (max-width: 880px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__logo {
+    margin-right: 20px;
+    @media (max-width: 880px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__menu {
+    max-width: 552px;
+    width: 100%;
+
+    @media (max-width: 1180px) {
+      max-width: 400px;
+    }
+  }
+
+  &__menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+
+    @media (max-width: 1370px) {
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__menu-item {
+    @media (max-width: 420px) {
+      font-size: 13px;
+    }
+  }
+
+  &__button {
+    margin-left: 20px;
+  }
+}
+
+.banner {
+  position: relative;
+  background: url("../img/sectionbg.png");
+  background-repeat: no-repeat;
+  padding: 49px 284px 0 284px;
+  height: 695px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1260px) {
+    padding: 29px 100px;
+  }
+
+  @media (max-width: 1180px) {
+    padding: 20px;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 661px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1180px) {
+      text-align: center;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+
+  &__title {
+    font-size: 84px;
+    line-height: 125px;
+    font-weight: 900;
+    margin: 93px 0 12px 0;
+
+    @media (max-width: 1260px) {
+      margin-top: 0;
+      font-size: 60px;
+      line-height: 70px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 18px;
+    letter-spacing: 0.1px;
+
+    @media (max-width: 1180px) {
+      text-shadow: 1px 1px 5px white;
+    }
+  }
+
+  &__button {
+    background-color: #f6e224;
+    border-radius: 10px;
+    padding: 8px 26px 7px 27px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    letter-spacing: 0.12px;
+    &:hover {
+      background-color: orange;
+    }
+  }
+
+  &__image {
+    @media (max-width: 1260px) {
+      max-width: 550px;
+    }
+
+    @media (max-width: 1180px) {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      z-index: 1;
+      filter: blur(5px);
+    }
+
+    @media (max-width: 625px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    & img {
+      max-width: 625px;
+      @media (max-width: 625px) {
+        max-width: 200%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .order-button {
+    width: 170px;
+    padding: 7px 0 6px 0;
+  }
+}
+
+@media (max-width: 880px) {
+  .button {
+    margin: 0 auto;
+  }
+}
