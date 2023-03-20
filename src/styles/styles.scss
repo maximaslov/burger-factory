@@ -272,7 +272,7 @@ a {
 .ingredients {
   text-align: center;
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   padding: 29px 284px; 
 
   @media (max-width: 1260px) {
@@ -423,8 +423,82 @@ a {
         margin-bottom: 5px;
       }
     }
+  }
 }
 
+.story {
+  display: flex;
+  padding: 0 284px;
+  justify-content: space-between;
+  margin-bottom: 1000px;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: 1600px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (max-width: 1260px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 940px) {
+    padding: 0 100px;
+  }
+
+  @media (max-width: 680px) {
+    padding: 0 40px;
+  }
+
+  &__text {
+    max-width: 668px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 45px;
+
+    @media (max-width: 1600px) {
+      margin-bottom: 31px;
+    }
+
+    @media (max-width: 1180px) {
+      margin-bottom: 5px;
+    }
+
+  }
+
+  &__image {
+
+    @media (max-width: 1600px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    & img {
+      @media (max-width: 1600px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__description{
+    @media (max-width: 1600px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (max-width: 1600px) {
+        display: block;
+      }
+    }
+  }
 }
 
 @media (max-width: 1180px) {
