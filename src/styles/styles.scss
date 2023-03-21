@@ -531,13 +531,22 @@ a {
   margin-bottom: 194px;
   align-items: center;
   position: relative;
+  min-height: 637px;
 
   @media (max-width: 1540px) {
     padding: 0 40px;
   }
 
+  @media (max-width: 1391px) {
+    margin-bottom: 600px;
+  }
+
   @media (max-width: 940px) {
-    margin-bottom: 84px;
+    margin-bottom: 542px;
+  }
+
+  @media (max-width: 915px) {
+    margin-bottom: 930px;
   }
 
 
@@ -550,6 +559,8 @@ a {
     justify-content: space-between;
     gap: 36px;
     margin-bottom: 50px;
+    position: absolute;
+    top: 139px;
 
     @media (max-width: 1540px) {
       flex-wrap: wrap;
@@ -558,8 +569,8 @@ a {
 
     @media (max-width: 530px) {
       width: 100%;
+      padding: 0 20px;
     }
-
   }
 
   &__card {
@@ -652,17 +663,14 @@ a {
     position: absolute;
     top: 593px;
 
-    @media (max-width: 1471px) {
-      top: 1024px;
+    @media (max-width: 1391px) {
+      top: 1040px;
     }
 
-    @media (max-width: 995px) {
-      top: 1440px;
+    @media (max-width: 915px) {
+      top: 1470px;
     }
 
-    @media (max-width: 420px) {
-      top: 1425px;
-    }
   }
 }
 
